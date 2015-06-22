@@ -1,0 +1,241 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+a {
+    color: #e74c3c;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+    a:hover {
+        color: #e76c3c;
+    }
+
+.row {
+    padding: 80px 0;
+}
+
+.btn {
+    border: none;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.btn-common {
+    background: #3d566e;
+    color: #fff;
+}
+
+    .btn-common:hover {
+        background: #e74c3c;
+        color: #fff;
+    }
+
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: 100;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    /*position: relative;*/
+    color: #bdc3c7;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+    .navbar li {
+        color: #d1d1d1;
+    }
+
+.navbar-default {
+    border: none;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        background: none;
+        color: #fff;
+    }
+
+    .navbar-default .navbar-nav li a,
+    .navbar-default .navbar-nav li a:hover {
+        color: #fff;
+    }
+
+    .navbar-default .navbar-nav > .active,
+    .navbar-default .navbar-nav li:hover {
+        background: #e74c3c;
+        padding-bottom: 5px;
+        color: #fff;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 25px;
+        color: #fff;
+        font-weight: 100;
+    }
+
+        .navbar-default .navbar-brand:hover {
+            color: #eee;
+        }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background: #333;
+    }
+
+.affix.navbar-default {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#hero-area {
+    background: #034C6C;
+    color: #fff;
+}
+
+    #hero-area .btn {
+        margin-right: 20px;
+    }
+
+    #hero-area img {
+        max-width: 100%;
+    }
+
+    #hero-area p {
+        padding: 50px 0;
+    }
+
+#services h3 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #e74c3c;
+}
+
+.about{
+    padding: 20px 0;
+}
+
+#review {
+    background: #2890BD;
+    color: #fff;
+}
+
+#other {
+    background: #2890BD;
+    color: #fff;
+}
+
+#about {
+    background: #04628A;
+    color: #fff;
+}
+
+    #about p {
+        line-height: 30px;
+        font-size: 17px;
+    }
+
+#contact {
+    background: #034C6C;
+    color: #fff;
+}
+
+/*Scroll Top*/
+.to-top i {
+    padding: 10px 15px;
+    margin: 10px;
+    background: transparent;
+    color: #34495e;
+    border: 2px solid #34495e;
+}
+
+    .to-top i:hover {
+        background: #34495e;
+        color: #fff;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+
+#copyright {
+    background: #000;
+    color: #333;
+    height:auto;
+}
+
+    #copyright a {
+        color: #333;
+    }
+
+.solution-box {
+    border: solid 2px #EFEFEF;
+    width: 90%;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.solution {
+    padding: 10px 0;
+}
+
+.solution-overlay {
+    opacity: 0.0;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.preview {
+    margin-top: -30%;
+    float: left;
+    padding-left: 25%;
+    cursor: pointer;
+}
+
+.download {
+    margin-top: -30%;
+    float: right;
+    padding-right: 35%;
+    cursor: pointer;
+}
+
+.cover-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
