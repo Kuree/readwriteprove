@@ -225,6 +225,7 @@ a {
     float: left;
     padding-left: 25%;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .download {
@@ -232,6 +233,7 @@ a {
     float: right;
     padding-right: 35%;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .cover-img{
@@ -239,3 +241,4 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
