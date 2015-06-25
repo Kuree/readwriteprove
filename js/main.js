@@ -94,6 +94,9 @@ $(document).ready(function () {
         var pdfSrc = url + "pdf/Chapter" + (id + 1).toString() + "SolutionsRWP2.pdf";
         pdfSrc = "https://docs.google.com/viewer?url=" + pdfSrc + "&embedded=true";
         $('#pdf-container').attr('src', pdfSrc);
+        $('#pdf-container').height(function () {
+            return $(window).height() * 0.75;
+        });
         $('#pdf-modall-label').text("Chapter " + (id + 1).toString() + " Solutions");
         $('#pdf-modal').modal('show');
     });
