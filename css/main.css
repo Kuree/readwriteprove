@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -142,7 +142,7 @@ a {
     color: #e74c3c;
 }
 
-.about{
+.about {
     padding: 20px 0;
 }
 
@@ -192,7 +192,7 @@ a {
 #copyright {
     background: #000;
     color: #333;
-    height:auto;
+    height: auto;
 }
 
     #copyright a {
@@ -236,12 +236,12 @@ a {
     background-color: transparent;
 }
 
-.cover-img{
+.cover-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.modal-body{
+.modal-body {
     height: 80%;
 }
