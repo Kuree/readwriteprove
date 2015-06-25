@@ -1,17 +1,16 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Protocol Change -->
+    <script type="text/javascript">
+        var host = "readwriteprove.com";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https";
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reading, Writing, and Proving: A Closer Look at Mathematics</title>
-
-    <!-- Protocol Change -->
-    <script type="text/javascript">
-    var host = "readwriteprove.com";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-    </script>
-
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -207,7 +206,7 @@
                         <h4 class="modal-title" id="pdf-modall-label"></h4>
                     </div>
                     <div class="modal-body">
-                        <div id="pdfRenderer"></div>
+                        <iframe id="pdf-container" style="position: relative; height: 100%; width: 100%;"></iframe>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -296,7 +295,6 @@
     <script src="js/wow.min.js"></script>
 
     <!-- All JS plugin Triggers -->
-    <script src="js/pdfobject.js"></script>
     <script src="js/main.js"></script>
 
 </body>

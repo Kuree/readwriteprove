@@ -26,6 +26,9 @@ CanvasRenderingContext2D.prototype.wrapText = function (text, x, y, maxWidth, li
     }
 }
 
+
+
+
 $(document).ready(function () {
 
     new WOW().init();
@@ -62,6 +65,8 @@ $(document).ready(function () {
 
     }
 
+    
+
     $('.solution-overlay').mouseenter(function () {
         $(this).parent().children(".solution-box").css("opacity", 0.2);
         $(this).css("opacity", 1.0);
@@ -84,15 +89,11 @@ $(document).ready(function () {
 
     $('.preview').click(function (event) {
         var id = parseInt(event.target.id.split("-")[1]);
-        var pdfSrc = "pdf/Chapter" + (id + 1).toString() + "SolutionsRWP2.pdf";
-        var pdf = new PDFObject({
-            url: pdfSrc,
-            id: "pdfRendered",
-            pdfOpenParams: {
-                view: "FitH"
-            },
-            height: $(window).height() * 0.8,
-        }).embed("pdfRenderer");
+        var url = window.location.href;
+        url = url.replace("/index.html", "");
+        var pdfSrc = url + "/pdf/Chapter" + (id + 1).toString() + "SolutionsRWP2.pdf";
+        pdfSrc = "https://docs.google.com/viewer?srcid=" + pdfSrc + "&embedded=true";
+        $('#pdf-container').attr('src', pdfSrc);
         $('#pdf-modall-label').text("Chapter " + (id + 1).toString() + " Solutions");
         $('#pdf-modal').modal('show');
     });
