@@ -142,29 +142,12 @@ a {
     color: #e74c3c;
 }
 
-.about {
-    padding: 20px 0;
-}
 
-#review {
-    background: #2890BD;
-    color: #fff;
-}
 
-#other {
-    background: #2890BD;
-    color: #fff;
+#about p {
+    line-height: 30px;
+    font-size: 17px;
 }
-
-#about {
-    background: #04628A;
-    color: #fff;
-}
-
-    #about p {
-        line-height: 30px;
-        font-size: 17px;
-    }
 
 #contact {
     background: #034C6C;
