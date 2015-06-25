@@ -90,9 +90,9 @@ $(document).ready(function () {
     $('.preview').click(function (event) {
         var id = parseInt(event.target.id.split("-")[1]);
         var url = window.location.href;
-        url = url.replace("/index.html", "");
-        var pdfSrc = url + "/pdf/Chapter" + (id + 1).toString() + "SolutionsRWP2.pdf";
-        pdfSrc = "https://docs.google.com/viewer?srcid=" + pdfSrc + "&embedded=true";
+        url = url.replace("index.html", "");
+        var pdfSrc = url + "pdf/Chapter" + (id + 1).toString() + "SolutionsRWP2.pdf";
+        pdfSrc = "https://docs.google.com/viewer?url=" + pdfSrc + "&embedded=true";
         $('#pdf-container').attr('src', pdfSrc);
         $('#pdf-modall-label').text("Chapter " + (id + 1).toString() + " Solutions");
         $('#pdf-modal').modal('show');
