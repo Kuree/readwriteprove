@@ -48,6 +48,7 @@ $(document).ready(function () {
             $(canvas).attr('id', "solution-" + (id).toString()).attr("class", "solution-box").appendTo(div);
             var overlay = document.createElement('span');
             $(overlay).attr('class', "solution-overlay").appendTo(div);
+            //$(canvas)
             var preview = document.createElement('i');
             $(preview).attr('class', 'fa fa-search-plus fa-2x preview').attr('id', 'preview-' + id.toString()).appendTo(overlay);
             var download = document.createElement('i');
@@ -114,5 +115,17 @@ $(document).ready(function () {
         });
     };
 
+
+    $('#backTop').backTop({
+
+        // the scroll position in px from the top
+        'position': 400,
+
+        // scroll animation speed
+        'speed': 500,
+
+        // red, white, black or green
+        'color': 'black',
+    });
 
 });
