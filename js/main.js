@@ -82,6 +82,10 @@ $(document).ready(function () {
 				setTimeout(function () { link.parentNode.removeChild(link); }, 10);
 			});
 		};
+		
+		// remove the unnecessary overlay
+		$( ".preview" ).remove();
+		$( ".download" ).remove();
 		return;
 	}
     
