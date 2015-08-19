@@ -66,6 +66,24 @@ $(document).ready(function () {
 
     }
 
+	// special care for Safari users as they cannot render it 
+	if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+		// it is a Safari, so we need to hide all the animations and let user download directly
+		for (var i = 0; i < max_height * max_width; i++) {
+			var solution = $("#solution-" + i.toString());
+			var pdfSrc = "pdf/Chapter" + (i + 1).toString() + "SolutionsRWP2.pdf";
+			solution.attr("class", "solution-box safari")
+			$(solution).click(function () {
+				var link = document.createElement('a');
+				link.href = pdfSrc;
+				link.download = pdfSrc.split("/")[1];
+				document.body.appendChild(link);
+				link.click();
+				setTimeout(function () { link.parentNode.removeChild(link); }, 10);
+			});
+		};
+		return;
+	}
     
 
     $('.solution-overlay').mouseenter(function () {

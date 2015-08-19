@@ -1,7 +1,7 @@
-@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+/*@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);*/
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     font-size: 14px;
     font-weight: 400;
     -webkit-box-sizing: border-box;
@@ -74,7 +74,7 @@ a {
 .navbar-default {
     border: none;
     border-radius: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.7);
 }
 
     .navbar-default .navbar-nav > .active > a,
@@ -227,4 +227,8 @@ a {
 
 .modal-body {
     height: 80%;
+}
+
+.safari:hover{
+	cursor:pointer;
 }
